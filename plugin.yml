@@ -1,0 +1,10 @@
+name: RandomSpawn-PMMP
+author: NycuRO
+authors:
+- NycuRO
+api:
+- 3.0.0-ALPHA5
+- 3.0.0-ALPHA6
+- 3.0.0-ALPHA7
+main: NycuRO\RandomSpawn\RandomSpawn;
+version: 0.1dev
