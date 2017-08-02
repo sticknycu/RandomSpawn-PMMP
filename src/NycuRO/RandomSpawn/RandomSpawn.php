@@ -29,14 +29,17 @@ class RandomSpawn extends PluginBase
 
     public function onCommand(CommandSender $sender, Command $command, $label, array $args)
     {
-        switch ($command->getName()) {
+        switch ($command->getName())
+        {
             case "rspawn":
-                if (!$sender->hasPermission("nycuro.rspawn")) {
+                if (!$sender->hasPermission("nycuro.rspawn"))
+                {
                     $sender->sendMessage("You don't have permission to use this command!");
                 }
                 else
                 {
-                    if ($sender instanceof Player) {
+                    if ($sender instanceof Player)
+                    {
                         $x = mt_rand(100, 100000);
                         $y = mt_rand(1, 256);
                         $z = mt_rand(100, 100000);
