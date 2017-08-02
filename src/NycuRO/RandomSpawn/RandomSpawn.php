@@ -43,7 +43,8 @@ class RandomSpawn extends PluginBase
                         $x = mt_rand(100, 100000);
                         $y = mt_rand(1, 256);
                         $z = mt_rand(100, 100000);
-                        $sender->getLevel()->getSafeSpawn(new Vector3($x, $y, $z));
+                        $coords = $sender->getLevel()->getSafeSpawn(new Vector3($x, $y, $z));
+                        $sender->teleport->$coords;
                         $sender->sendMessage(TextFormat::GREEN . "You are teleported to Wild!");
                         $sender->sendMessage(TextFormat::YELLOW . "Your position is selected random!");
                     }
